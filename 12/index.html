@@ -13,32 +13,33 @@
  <h1>Pros and cons of flexbox</h1>
 
  <div class="container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
   <div>10</div>
+  <div>9</div>
+  <div>8</div>
+  <div>7</div>
+  <div>6</div>
+  <div>3</div>
+  <div>5</div>
+  <div>4</div>
+  <div>2</div>
+  <div>1</div>
  </div>
  
  <style>
   .container {
+   background: #ddd;
    font-size: 2em;
    color: black;
    
    display: flex;
-   flex-direction: row;
-   
-   flex-wrap: wrap;
+   flex-direction: row-reverse;
    align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 0.5rem;
   }
   
   .container > div {
-   
    display: flex;
    flex-direction: row;
    
@@ -46,6 +47,7 @@
    align-content: center;
    align-items: center;
   }
+  
  </style>
 </body>
 
