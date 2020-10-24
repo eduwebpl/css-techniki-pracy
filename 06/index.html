@@ -10,12 +10,22 @@
 <body>
  <h1>CSS Units</h1>
  
- <div class="box"></div>
+ <div class="box">
+  This is outer text
+  <div class="inner-box">
+   This is inner text
+  </div>
+ </div>
  
  <style>
   .box {
     width: 6rem;
     height: 8rem;
+    color: black;
+  }
+  
+  .inner-box {
+   font-size: 0.5ch;
   }
  </style>
 </body>
