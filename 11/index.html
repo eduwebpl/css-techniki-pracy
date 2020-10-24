@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advanced CSS</title>
+ <link rel="stylesheet" href="base.css">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <h1>Flex grow and flex shrink</h1>
+
+ <div class="container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+ </div>
+ 
+ <style>
+  .container {
+   height: 50vh;
+   font-size: 2em;
+   color: black;
+   
+   display: flex;
+   flex-direction: row;
+   
+   flex-wrap: wrap;
+   align-items: center;
+  }
+  
+  .container > div {
+   
+   display: flex;
+   flex-direction: row;
+   
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+  }
+ </style>
+</body>
+
+</html>
