@@ -1,0 +1,58 @@
+body {
+ background: #0F111A;
+ color: white;
+ margin: 0 auto;
+ text-align: center;
+ font-family: 'Lato', sans-serif;
+ padding: 0 2rem;
+}
+
+:root {
+ --orange: orange;
+ --green: yellowgreen;
+ --yellow: yellow;
+ --blue: aqua;
+ --purple: rebeccapurple;
+}
+
+.box {
+ width: 6rem;
+ height: 6rem;
+ background: var(--color);
+ padding: 0.2rem;
+ box-sizing: border-box;
+ color: black;
+ font-size: 3rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 100px;
+ left: 100px;
+}
+
+.b-1 {
+ --color: var(--green);
+ left: 170px;
+ top: 400px;
+}
+
+.b-2 {
+ --color: var(--orange);
+}
+
+.b-3 {
+ --color: var(--yellow);
+ left: 150px;
+ top: 350px;
+}
+
+.b-4 {
+ --color: var(--blue);
+ top: 20px;
+}
+
+.b-5 {
+ --color: var(--purple);
+ left: 250px;
+}
