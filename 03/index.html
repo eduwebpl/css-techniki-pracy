@@ -12,7 +12,12 @@
 <body>
  <h1>Display modes</h1>
 
- <div class="box">Hello!</div>
+ <span class="box">
+  Hello!
+  <div>
+   Hello 2!
+  </div>
+ </span>
  
  <table class="table">
   <tr>
@@ -38,11 +43,26 @@
 </table>
 
  <style>
+  
   .box {
-   
+   display: inline;
+   width: 10rem;
+   height: 5rem;
+   background: rebeccapurple;
+  }
+  body {
+   text-align: right;
+  }
+  div {
+   display: block;
   }
   
-  .table {
+  h1 {
+   background: yellowgreen;
+  }
+  
+  .box {
+   justify-content: space-around;
    
   }
  </style>
