@@ -10,22 +10,37 @@
 <body>
  <h1>CSS Units part 2</h1>
  
- <div class="box">
-  This is outer text
-  <div class="inner-box">
+ <div class="modal">
+  <div class="inner-modal">
    This is inner text
   </div>
  </div>
  
  <style>
-  .box {
-    width: 6rem;
-    height: 8rem;
+  body {
+   padding: 0;
+  }
+  .modal {
+    background: rgba(0,0,0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
     color: black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .inner-box {
-   font-size: 0.5ch;
+  .inner-modal {
+   font-size: 1rem;
+   width: 50vmax;
+   height: 50vw;
+   background: white;
+   
   }
  </style>
 </body>
