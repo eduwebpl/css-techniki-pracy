@@ -32,11 +32,19 @@
     display: grid;
     /* grid-auto-flow: dense; */
     grid-template-columns: 
-    [start] 1fr [content-start] repeat(4, 1fr) [content-end] 1fr [end];
+    [start] 1fr [content-start] repeat(3, 1fr) [content-end] 1fr [end];
+    
+    grid-gap: 0.5rem;
   }
   
-  .container > li {
-   grid-column: var(--column-start, auto) / var(--column-end, auto);
+  .container li {
+   grid-column: 
+    var(--column-start, auto) / var(--column-end, auto);
+  }
+  
+  .item-3 {
+    --column-start: content-start;
+    --column-end: content-end;
   }
   
  </style>
