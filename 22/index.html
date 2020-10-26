@@ -10,7 +10,7 @@
 </head>
 
 <body>
- <h1>@supports </h1>
+ <h1>CSS Custom properties</h1>
 
  <ul class="container">
     <li>1</li>
@@ -27,11 +27,39 @@
     <li>12</li>
  </ul>
  
+ <ul class="container is-dark">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+</ul>
+ 
  <style>
   .container {
+      --columns: 6;
+      height: auto;
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(var(--columns), 1fr);
       gap: 0.2rem;
+      margin-bottom: 0.5rem;
+  }
+  
+  .is-dark { 
+    --orange: rgb(168, 113, 9);
+    --green: rgb(103, 139, 30);
+    --yellow: rgb(155, 155, 12);
+    --blue: rgb(18, 131, 131);
+    --purple: rgb(67, 34, 100);
+    
+    --columns: 3;
   }
  </style>
 </body>
