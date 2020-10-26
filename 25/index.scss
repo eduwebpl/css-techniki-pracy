@@ -1,5 +1,10 @@
 .modal {
     .bar {
-        display: block;
+      display: block;
+    }
+    
+    // @TODO: this needs fixing later
+    .close-button::after {
+      content: 'x';
     }
 }  

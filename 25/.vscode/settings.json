@@ -1,7 +1,8 @@
+{
 "compile-hero": {
  "disable-compile-files-on-did-save-code": false,
  "notification-toggle": false,
  "scss-output-directory": "./dist",
  "scss-output-toggle": true,
  "ignore": ["**/spec/*"],
-}
+}}

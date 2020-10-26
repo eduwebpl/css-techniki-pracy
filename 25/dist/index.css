@@ -1,0 +1,6 @@
+.modal .bar {
+  display: block;
+}
+.modal .close-button::after {
+  content: "x";
+}
