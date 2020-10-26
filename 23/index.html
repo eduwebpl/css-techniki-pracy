@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advanced CSS</title>
+ <link rel="stylesheet" href="base.css">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <h1>CSS Variables - Verbose usage</h1>
+
+ <ul class="container">
+  <li class="item-1">1</li>
+  <li class="item-2">2</li>
+  <li class="item-3">3</li>
+  <li class="item-4">4</li>
+  <li class="item-5">5</li>
+  <li class="item-6">6</li>
+  <li class="item-7">7</li>
+  <li class="item-8">8</li>
+  <li class="item-9">9</li>
+  <li class="item-10">10</li>
+  <li class="item-11">11</li>
+  <li class="item-12">12</li>
+ </ul>
+ 
+ <style>
+  .container {
+    display: grid;
+    /* grid-auto-flow: dense; */
+    grid-template-columns: 
+    [start] 1fr [content-start] repeat(4, 1fr) [content-end] 1fr [end];
+  }
+  
+  .container > li {
+   grid-column: var(--column-start, auto) / var(--column-end, auto);
+  }
+  
+ </style>
+</body>
+
+</html>
