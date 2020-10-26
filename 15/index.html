@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advanced CSS</title>
+ <link rel="stylesheet" href="base.css">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <h1>CSS Grid - placing items on the grid 🗺</h1>
+
+ <div class="container">
+  <div class="item-1">1</div>
+  <div class="item-2">2</div>
+  <div class="item-3">3</div>
+  <div class="item-4">4</div>
+  <div class="item-5">5</div>
+  <div class="item-6">6</div>
+  <div class="item-7">7</div>
+  <div class="item-8">8</div>
+  <div class="item-9">9</div>
+  <div class="item-10">10</div>
+  <div class="item-11">11</div>
+  <div class="item-12">12</div>
+ </div>
+ 
+ <style>
+  .container {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   gap: 0.5rem;
+  }
+ </style>
+</body>
+
+</html>
