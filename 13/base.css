@@ -20,7 +20,6 @@ body {
 }
 
 .container > div {
-  width: 6rem;
   min-height: 8rem;
   background: var(--color);
   font-size: 3rem;
