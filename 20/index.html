@@ -27,12 +27,20 @@
     <li>12</li>
  </ul>
  
- <style>
-  .container {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 0.2rem;
+ <style>   
+   .container {
+       display: grid;
+       grid-template-columns: repeat(6, 1fr);
+       gap: 0.2rem;
+   }
+   
+  @supports selector(body.container)) {
+   body:not(.container) {
+    background: #ddd;
+   }
   }
+  
+  
  </style>
 </body>
 
