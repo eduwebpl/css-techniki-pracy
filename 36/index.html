@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advanced CSS</title>
+ <link rel="stylesheet" href="base.css">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <h1>Will change</h1>
+
+ <div class="circle">
+ </div>
+ <style>
+  .circle {
+   width: 6rem;
+   height: 6rem;
+   background: var(--blue);
+   padding: 0.2rem;
+   box-sizing: border-box;
+   border-radius: 3rem;
+   
+   transition-duration: 3s;
+   transition-property: width, height, border-radius;
+   transition-timing-function: linear;
+  }
+  
+  .circle:hover {
+   width: 100rem;
+   height: 100rem;
+   border-radius: 50rem;
+  }
+ </style>
+</body>
+
+</html>
