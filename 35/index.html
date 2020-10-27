@@ -12,8 +12,46 @@
 <body>
  <h1>Complex selectors</h1>
 
+ <div class="container">
+  <ul class="my-list">
+   <li class="item-1">
+    <button class="cta-button">Click me please (1)</button>
+   </li>
+   <li class="item-2"><button class="cta-button">Click me please (2)</button></li>
+   <li class="item-3"><button class="cta-button">Click me please (3)</button></li>
+   <li class="item-4"><button class="cta-button">Click me please (4)</button></li>
+   <li class="item-5"><button class="cta-button">Click me please (5)</button></li>
+   <li class="item-6"><button class="cta-button">Click me please (6)</button></li>
+   <li class="item-7">
+    <button class="cta-button item-7__button">Click me please (7)</button>
+   </li>
+   <li class="item-8"><button class="cta-button">Click me please (8)</button></li>
+   <li class="item-9"><button class="cta-button">Click me please (9)</button></li>
+   <li class="item-10"><button class="cta-button">Click me please (10)</button></li>
+   <li class="item-11"><button class="cta-button">Click me please (11)</button></li>
+   <li class="item-12"><button class="cta-button">Click me please (12)</button></li>
+  </ul>
+ </div>
  <style>
-   
+  .my-list {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+  }
+
+  .cta-button {
+   width: 8rem;
+   border: none;
+   background: var(--purple);
+   color: white;
+   padding: 0.8rem;
+   margin-bottom: 0.5rem;
+  }
+
+  .item-7__button {
+   background: var(--yellow);
+   color: black;
+  }
  </style>
 </body>
 
