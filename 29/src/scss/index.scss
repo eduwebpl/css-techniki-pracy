@@ -32,11 +32,28 @@ body {
  --yellow: #{$c-yellow};
  --blue: #{$c-blue};
  --purple: #{$c-purple};
+ 
+ 
+ --primary: var(--orange);
+ --secondary: var(--green);
+ --tertiary: var(--yellow);
+ 
+ --primary-lighter: #{$c-orange-lighter};
+ --secondary-lighter: #{$c-purple-lighter};
+ --tertiary-lighter: var(--orange);
+ 
 }
 
 .item-1 {
-  background: var(--orange);
+  $custom-size: 5rem;
+  width: $custom-size;
+  height: $custom-size;
+  background: var(--primary);
+  &:hover {
+   background: var(--primary-lighter);
+  }
 }
+
 
 .item-2 {
   background: var(--green);

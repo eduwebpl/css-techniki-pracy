@@ -29,10 +29,21 @@ body div {
   --yellow: yellow;
   --blue: aqua;
   --purple: rebeccapurple;
+  --primary: var(--orange);
+  --secondary: var(--green);
+  --tertiary: var(--yellow);
+  --primary-lighter: #ffc966;
+  --secondary-lighter: #9966cc;
+  --tertiary-lighter: var(--orange);
 }
 
 .item-1 {
-  background: var(--orange);
+  width: 5rem;
+  height: 5rem;
+  background: var(--primary);
+}
+.item-1:hover {
+  background: var(--primary-lighter);
 }
 
 .item-2 {

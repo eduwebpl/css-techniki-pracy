@@ -3,3 +3,7 @@ $c-green: yellowgreen;
 $c-yellow: yellow;
 $c-blue: aqua;
 $c-purple: rebeccapurple;
+$c-white: white;
+
+$c-orange-lighter: lighten($c-orange, 20%);
+$c-purple-lighter: lighten($c-purple, 20%);
