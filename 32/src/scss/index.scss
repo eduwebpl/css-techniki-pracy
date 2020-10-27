@@ -1,0 +1,27 @@
+@import '_variables';
+
+body {
+ background: #0F111A;
+ color: white;
+ margin: 0 auto;
+ text-align: center;
+ font-family: 'Lato', sans-serif;
+ padding: 0 2rem;
+}
+
+:root {
+ --orange: $c-orange;
+ --green: $c-green;
+ --yellow: $c-yellow;
+ --blue: $c-blue;
+ --purple: $c-purple;
+}
+ 
+
+:export {
+  c-orange: $c-orange;
+  c-green: $c-green;
+  c-yellow: $c-yellow;
+  c-blue: $c-blue;
+  c-purple: $c-purple;
+}
