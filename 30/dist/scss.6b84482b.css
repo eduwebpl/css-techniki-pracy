@@ -40,8 +40,15 @@ body div {
   background: var(--purple);
 }
 
+.item-2--special:hover {
+  background: var(--purple);
+}
+
 .item-2 {
   background: var(--green);
+}
+.is-keyboard-navigating .item-2 {
+  background: var(--purple);
 }
 
 .item-3 {

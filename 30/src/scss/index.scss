@@ -39,14 +39,24 @@ body {
   width: $custom-size;
   height: $custom-size;
   background: var(--orange);
+  
   &:hover {
    background: var(--purple);
   }
 }
 
+.item-2--special {
+ &:hover {
+  background: var(--purple);
+ }
+}
 
 .item-2 {
   background: var(--green);
+  
+  .is-keyboard-navigating & {
+   background: var(--purple);
+  }
 }
 
 .item-3 {
