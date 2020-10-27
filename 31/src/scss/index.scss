@@ -1,0 +1,40 @@
+@import '_variables';
+@import '_helpers';
+
+body {
+ background: #0F111A;
+ color: white;
+ margin: 0 auto;
+ text-align: center;
+ font-family: 'Lato', sans-serif;
+ padding: 0 2rem;
+}
+
+button {
+ border: none;
+ padding: 1rem;
+ font-size: 1rem;
+ width: 10rem;
+ 
+ &:hover {
+  opacity: 0.5;
+ }
+}
+
+:root {
+ --orange: $c-orange;
+ --green: $c-green;
+ --yellow: $c-yellow;
+ --blue: $c-blue;
+ --purple: $c-purple;
+}
+
+ul {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+ 
+ li {
+  margin: 0.5rem;
+ }
+}
