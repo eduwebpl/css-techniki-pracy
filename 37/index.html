@@ -10,7 +10,7 @@
 </head>
 
 <body>
- <h1>Will change</h1>
+ <h1>Layout paint / shift</h1>
 
  <ul>
   <li><button>Hello</button></li>
@@ -48,16 +48,24 @@
   }
   
   .animation {
-   position: relative;
+   background: var(--orange);
+   
+   animation-name: move;
+   animation-timing-function: linear;
+   animation-duration: 10s;
+   animation-play-state: running;
+   animation-fill-mode: both;
+   animation-iteration-count: infinite;
+
   }
   
   @keyframes move {
    from {
-    
+    /* transform: translate(0); */
    }
    
    to {
-    
+    /* transform: translate(200px); */
    }
   }
  </style>
