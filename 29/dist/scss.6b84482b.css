@@ -1,0 +1,56 @@
+body {
+  background: #0F111A;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  padding: 0 2rem;
+}
+body div {
+  width: 6rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+:root {
+  --orange: orange;
+  --green: yellowgreen;
+  --yellow: yellow;
+  --blue: aqua;
+  --purple: rebeccapurple;
+}
+
+.item-1 {
+  background: var(--orange);
+}
+
+.item-2 {
+  background: var(--green);
+}
+
+.item-3 {
+  background: var(--yellow);
+  color: black;
+}
+
+.item-4 {
+  background: var(--purple);
+}
+
+.item-5 {
+  background: var(--blue);
+  color: black;
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */

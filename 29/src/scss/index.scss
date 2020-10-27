@@ -1,0 +1,57 @@
+@import '_variables';
+
+body {
+ background: #0F111A;
+ color: white;
+ margin: 0 auto;
+ text-align: center;
+ font-family: 'Lato', sans-serif;
+ padding: 0 2rem;
+ 
+ div {
+  width: 6rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+ }
+}
+
+.container {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+ width: 100%;
+}
+
+:root {
+ --orange: #{$c-orange};
+ --green: #{$c-green};
+ --yellow: #{$c-yellow};
+ --blue: #{$c-blue};
+ --purple: #{$c-purple};
+}
+
+.item-1 {
+  background: var(--orange);
+}
+
+.item-2 {
+  background: var(--green);
+}
+
+.item-3 {
+  background: var(--yellow);
+  color: black;
+}
+
+.item-4 {
+  background: var(--purple);
+}
+
+.item-5 {
+  background: var(--blue);
+  color: black;
+}
