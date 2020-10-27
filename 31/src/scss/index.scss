@@ -21,6 +21,22 @@ button {
  }
 }
 
+@for $i from 1 through 6 {
+ ul li:nth-child(#{$i}) button {
+  background: lighten($c-purple, $i * 7%);
+ }
+}
+
+$icons: ("eye": "\f112", "start": "\f12e", "stop": "\f12f");
+
+@each $name, $glyph in $icons {
+  .icon-#{$name}:before {
+    display: inline-block;
+    font-family: "Icon Font";
+    content: $glyph;
+  }
+}
+
 :root {
  --orange: $c-orange;
  --green: $c-green;

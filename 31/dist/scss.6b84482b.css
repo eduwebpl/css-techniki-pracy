@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background: #0F111A;
   color: white;
@@ -15,6 +16,48 @@ button {
 }
 button:hover {
   opacity: 0.5;
+}
+
+ul li:nth-child(1) button {
+  background: #783cb4;
+}
+
+ul li:nth-child(2) button {
+  background: #8a4fc4;
+}
+
+ul li:nth-child(3) button {
+  background: #9c6acd;
+}
+
+ul li:nth-child(4) button {
+  background: #ad85d6;
+}
+
+ul li:nth-child(5) button {
+  background: #bf9fdf;
+}
+
+ul li:nth-child(6) button {
+  background: #d1bae8;
+}
+
+.icon-eye:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: "";
+}
+
+.icon-start:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: "";
+}
+
+.icon-stop:before {
+  display: inline-block;
+  font-family: "Icon Font";
+  content: "";
 }
 
 :root {
