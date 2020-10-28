@@ -14,7 +14,7 @@
 
  <h2>Places to visit: </h2>
  <ol class="container">
-    <li>La Paz</li>
+    <li class="special">La Paz</li>
     <li>Rio de Janerio</li>
     <li>Salvador bahia</li>
     <li>Taj Mahal</li>
@@ -32,7 +32,16 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    list-style-type: none;
+    
+    counter-reset: places-count;
   }
+  
+  .container li::before {
+    counter-increment: places-count;
+    content: counter(places-count) ". ";
+    color: var(--green);
+  }  
  </style>
 </body>
 
