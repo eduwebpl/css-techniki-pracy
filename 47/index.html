@@ -16,6 +16,22 @@
  <style>
   img {
    max-width: 80vw;
+   filter: hue-rotate(0deg);
+   animation-name: colorwheel;
+   animation-timing-function: linear;
+   animation-duration: 60s;
+   animation-iteration-count: infinite;
+   
+  }
+  
+  @keyframes colorwheel {
+    0% {
+     filter: hue-rotate(0deg);
+    }
+    
+    100% {
+     filter: hue-rotate(360deg);
+    }
   }
  </style>
 </body>
