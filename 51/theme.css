@@ -1,0 +1,7 @@
+.business-card--dark {
+ background: black;
+}
+
+.business-card--dark .business-card__text {
+ color: white;
+}

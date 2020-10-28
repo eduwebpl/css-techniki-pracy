@@ -1,0 +1,29 @@
+.business-card {
+ font-size: 2rem;
+ width: 8em;
+ height: 5em;
+ background: white;
+ display: grid;
+ grid-template-columns: 1fr 2em;
+ padding: 0.5em;
+ overflow: hidden;
+}
+
+.business-card__text {
+ text-align: left;
+ color: black;
+ font-size: 0.4em;
+}
+
+.business-card__text ul {
+ margin: 0;
+ padding: 0 0.5em;
+}
+
+.business-card li {
+ margin: 0.5em;
+}
+
+.business-card__logo {
+ font-size: 5em;
+}

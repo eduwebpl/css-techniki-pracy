@@ -2,83 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced CSS</title>
-    <link rel="stylesheet" href="base.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advanced CSS</title>
+ <link rel="stylesheet" href="base.css">
+ <link rel="stylesheet" href="layout.css">
+ <link rel="stylesheet" href="module.css">
+ <link rel="stylesheet" href="state.css">
+ <link rel="stylesheet" href="theme.css">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>SMACSS</h1>
-
-    <div class="business-card">
-        <div class="business-card__text">
-            <ul>
-                <li>
-                    Best services in your country
-                </li>
-                <li>
-                    Fair pricing
-                </li>
-                <li>
-                    Quality of service
-                </li>
-                <li>
-                    📞 111-222-333 | Call us!
-                </li>
-            </ul>
-        </div>
-        <div class="business-card__logo">
-            👩🏼‍💻
-        </div>
-    </div>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .business-card {
-            font-size: 2rem;
-            width: 8em;
-            height: 5em;
-            background: white;
-            display: grid;
-            grid-template-columns: 1fr 2em;
-            padding: 0.5em;
-            overflow: hidden;
-        }
-
-        .business-card__text {
-            text-align: left;
-            color: black;
-            font-size: 0.4em;
-        }
-
-        .business-card__text ul {
-            margin: 0;
-            padding: 0 0.5em;
-        }
-
-        .business-card li {
-            margin: 0.5em;
-        }
-
-        .business-card__logo {
-            font-size: 5em;
-        }
-
-        .business-card--dark {
-            background: black;
-        }
-
-        .business-card--dark .business-card__text {
-            color: white;
-        }
-    </style>
+ <h1>SMACSS</h1>
+ <div class="container">
+  <div class="business-card business-card--dark">
+   <div class="business-card__text">
+    <ul>
+     <li>
+      Best services in your country
+     </li>
+     <li>
+      Fair pricing
+     </li>
+     <li>
+      Quality of service
+     </li>
+     <li>
+      📞 111-222-333 | Call us!
+     </li>
+    </ul>
+   </div>
+   <div class="business-card__logo">
+    👩🏼‍💻
+   </div>
+  </div>
+ </div>
 </body>
 
 </html>
