@@ -12,12 +12,39 @@
 <body>
  <h1>Focus styles</h1>
 
- <input placeholder="Type your query here">
+ <div class="container">
+  <input type="text" placeholder="Type your query here">
+  <input type="text" placeholder="Type your query here">
+  <input type="text" placeholder="Type your query here">
+  <input type="text" placeholder="Type your query here">
+  <input type="text" placeholder="Type your query here">
+ </div>
+ 
  <style>
+  
+  .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  
+  .container:focus-within {
+   /* background: #ddd; */
+  }
+  
   input {
    padding: 1rem;
    font-size: 1rem;
+   margin-bottom: 0.5rem;
+   outline: none;
+   border: 0.2rem solid transparent;
   }
+  
+  input:focus-visible {
+    border: 0.2rem solid var(--blue);
+  }
+  
+ 
  </style>
 </body>
 
