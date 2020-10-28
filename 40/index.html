@@ -28,12 +28,27 @@
  </ul>
  
  <style>
+  
   .container {
-      padding: 1rem;
+     --default-padding: 1rem;
+      padding: var(--default-padding);
       display: flex;
       flex-wrap: wrap;
       gap: 0.2rem;
       align-items: center;
+      position: relative;
+  }
+  
+  .item-1 {
+    width: 6rem;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0 0 10px black;
   }
  </style>
 </body>
