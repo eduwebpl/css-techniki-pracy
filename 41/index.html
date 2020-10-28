@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advanced CSS</title>
+ <link rel="stylesheet" href="base.css">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <h1>Reading HTML attributes</h1>
+
+ <button class="cta" data-tooltip="Hidden text!">
+  Hello world!
+ </div>
+ <style>
+  body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  
+  .cta {
+   background: var(--green);
+   border: none;
+   padding: 1rem;
+   font-size: 1.5rem;
+   border-radius: 0.5rem;
+   margin-top: 10rem;
+  }
+  
+  .cta:hover {
+   cursor: pointer;
+   opacity: 0.5;
+  }
+  
+  
+  .cta::before {
+   display: inline-block;
+  }
+ </style>
+</body>
+
+</html>
