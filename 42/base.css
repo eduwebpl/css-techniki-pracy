@@ -1,0 +1,26 @@
+body {
+  background: #0F111A;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  padding: 0 2rem;
+}
+
+:root {
+  --orange: orange;
+  --green: yellowgreen;
+  --yellow: yellow;
+  --blue: aqua;
+  --purple: rebeccapurple;
+}
+
+.container {
+  text-align: left;
+  font-weight: 2em;
+  margin: 0 auto;
+}
+
+.container li {
+  width: 9rem;
+}
