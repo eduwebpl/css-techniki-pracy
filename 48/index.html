@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advanced CSS</title>
+ <link rel="stylesheet" href="base.css">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <h1> Blend modes </h1>
+ <div class="pic"></div>
+ <style>
+  .pic {
+   background-image: url('vhSuAyR.jpg');
+   width: 480px;
+   height: 639px;
+   background-size: contain;
+   filter:
+    contrast(1.2)
+    /* add warm tint to grass and green tint to sky to get more 'cinematic' feel */
+   hue-rotate(-15deg);
+    border: 5px solid white;
+  }
+
+  .pic::after,
+  .pic::before {
+   content: '';
+   display: block;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   position: absolute;
+  }
+
+  .pic:hover {
+   filter: none;
+  }
+
+  .pic:hover::after,
+  .pic:hover::before {
+   display: none;
+  }
+
+  .pic::after {
+   z-index: 2;
+   mix-blend-mode: overlay;
+   /* darken the sky, brighten the landscape */
+   background-image: linear-gradient(184deg, #244 23%, #99b 40%);
+  }
+
+  .pic::before {
+   mix-blend-mode: screen;
+   opacity: .6;
+   /* emulate film light leaks */
+   background-image: linear-gradient(12deg, #f42 5%, transparent 14%, transparent 65%, #202 80%);
+  }
+ </style>
+</body>
+
+</html>
