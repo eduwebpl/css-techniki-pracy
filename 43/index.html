@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advanced CSS</title>
+ <link rel="stylesheet" href="base.css">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <h1>Relative selectors</h1>
+
+ <div class="stars">
+  <input class="visually-hidden" type="radio" id="star1" name="star" value="1">
+  <label for="star1"> One Star </label>
+  <input class="visually-hidden" type="radio" id="star2" name="star" value="2">
+  <label for="star2"> Two Stars </label>
+  <input class="visually-hidden" type="radio" id="star3" name="star" value="3">
+  <label for="star3"> Three Stars </label>
+  <input class="visually-hidden" type="radio" id="star4" name="star" value="4">
+  <label for="star4"> Four Stars </label>
+  <input class="visually-hidden" type="radio" id="star5" name="star" value="5">
+  <label for="star5"> Five Stars </label>
+ </div>
+
+ <style>
+  body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .stars {
+   background: #ffffff;
+   height: 30px;
+   width: 200px;
+   padding: 10px;
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  label {
+   width: 30px;
+   height: 30px;
+   padding: 5px;
+   color: transparent;
+  }
+
+  label::before {
+   content: '★';
+   color: #c0c0c0;
+   font-size: 30px;
+   line-height: 30px;
+  }
+ </style>
+</body>
+
+</html>
