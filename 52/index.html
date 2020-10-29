@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS</title>
+    <link rel="stylesheet" href="base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>2020 Media queries</h1>
+
+    <h2 class="headline">
+        <span class="logo">🗞</span> Your favourite news source
+    </h2>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, cum! Exercitationem omnis, neque quia ipsam
+        voluptas aliquid iste consectetur quas cum, unde suscipit, magnam veniam beatae soluta ea fuga recusandae.
+    </p>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eaque animi facilis corrupti dolorem sit sed
+        ipsam cumque voluptates repudiandae esse reiciendis incidunt qui saepe ipsum. Voluptates ipsa exercitationem
+        porro?</p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam laboriosam ipsa nulla, velit modi dolorem
+        iste, placeat exercitationem nobis sed assumenda? Nisi omnis est doloremque animi eveniet obcaecati
+        necessitatibus id.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto accusamus neque itaque sunt vero
+        ducimus, odit quibusdam debitis id, optio possimus aperiam repudiandae eveniet porro repellat? Fugit, molestiae
+        dolor.
+        <img src="warsaw.jpg" alt="Warsaw landscape">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et labore, est excepturi aut aliquam obcaecati, facere
+        autem ullam quos esse accusantium possimus laudantium quas quaerat quo repellendus culpa minima porro!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam asperiores repellat assumenda quaerat quam ab.
+        Perspiciatis laboriosam dolores maiores cum, quidem, hic consequatur tenetur id, odio consectetur deserunt.
+        Laudantium, itaque!
+    </p>
+
+    <style>
+        body.is-dark {
+            background: #0F111A;
+            color: white;
+        }
+
+        img {
+            max-width: 60vw;
+            float: left;
+            margin: 1rem;
+            margin-left: 0;
+        }
+
+        .headline {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .logo {
+            display: inline-block;
+            margin-right: 1rem;
+            font-size: 2rem;
+            line-height: 1rem;
+
+            animation-name: spin;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-fill-mode: both;
+            animation-duration: 7s;
+            animation-delay: 3s;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            5% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /**
+            prefers-color-scheme: dark | light
+            prefers-reduced-motion: reduce | no-preference
+            inverted-colors: no-preference | invert
+        **/
+
+        /**
+            prefers-reduced-data: reduce | no-preference
+            prefers-reduced-transparency: reduce | no-preference
+            prefers-contrast: high | no-preference
+            light-level: dim | normal | washed
+        **/
+
+        /**
+            @custom-media --medium-devices (min-width: 50rem);
+
+            @media (--medium-devices) {
+                .container { max-width: 40rem; }
+            }
+
+            https://github.com/postcss/postcss-custom-media
+        **/
+
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+body {
+ margin: 0 auto;
+ font-family: 'Lato', sans-serif;
+ padding: 0 2rem;
+}
+
+:root {
+ --orange: orange;
+ --green: yellowgreen;
+ --yellow: yellow;
+ --blue: aqua;
+ --purple: rebeccapurple;
+}
