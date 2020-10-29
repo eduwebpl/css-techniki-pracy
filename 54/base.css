@@ -1,0 +1,46 @@
+body {
+ font-family: 'Lato', sans-serif;
+ margin: 0;
+ padding: 0;
+}
+
+:root {
+ --orange: orange;
+ --green: yellowgreen;
+ --yellow: yellow;
+ --blue: aqua;
+ --purple: rebeccapurple;
+}
+
+main, header {
+    padding: 0 2rem;
+}
+
+main {
+    padding-top: 2rem;
+}
+
+body.is-dark {
+    background: #0F111A;
+    color: white;
+}
+
+img {
+    max-width: 60vw;
+    float: left;
+    margin: 1rem;
+    margin-left: 0;
+}
+
+.headline {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 2rem;
+    line-height: 1rem;
+}
+
