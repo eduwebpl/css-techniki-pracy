@@ -20,9 +20,35 @@
      <div class="item-4"></div>
  </div>
  <style>
-     /**
-        aspect-ratio
-     **/
+     .item-1 {
+      aspect-ratio: 4 / 3; 
+      min-height: 0;
+      overflow: hidden;
+     }
+     
+     .item-2 {
+      aspect-ratio: 1 / 1; 
+      min-height: 0;
+      overflow: hidden;
+     }
+     
+     .item-3 {
+      aspect-ratio: 16 / 9;
+      min-height: 0;
+      overflow: hidden;
+     }
+     
+     @media (min-aspect-ratio: 4 / 3) {
+      body {
+       background: red;
+      }
+     }
+     
+     @media (max-aspect-ratio: 16 / 9) {
+      body {
+       background: green;
+      }
+     }
  </style>
 </body>
 
